@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="heading">Calculator</div>
+
+    <div class="container">
+        <table>
+
+            <tr>
+                <td colspan="4">
+                    <div id="main"></div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="btn-1 btn" id="key-c" value="C" onclick="clearp()">CLS</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-/" value="/" onclick="execute('/')">/</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-*" value="*" onclick="execute('*')">*</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key--" value="-" onclick="execute('-')">-</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="btn-1 btn" id="key-7" value="7" onclick="execute('7')">7</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-8" value="8" onclick="execute('8')">8</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-9" value="9" onclick="execute('9')">9</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-+" value="+" onclick="execute('+')">+</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="btn-1 btn" id="key-4" value="4" onclick="execute('4')">4</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-5" value="5" onclick="execute('5')">5</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-6" value="6" onclick="execute('6')">6</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-%" value="%" onclick="execute('%')">%</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="btn-1 btn" id="key-1" value="1" onclick="execute('1')">1</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-2" value="2" onclick="execute('2')">2</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-3" value="3" onclick="execute('3')">3</div>
+                </td>
+                <td rowspan="2">
+                    <div class="btn-2 btn" id="key-=" value="=" onclick="solve()">=</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <div class="btn-3 btn" id="key-0" value="0" onclick="execute('0')">0</div>
+                </td>
+                <td>
+                    <div class="btn-1 btn" id="key-dot" value="." onclick="execute('.')">.</div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
